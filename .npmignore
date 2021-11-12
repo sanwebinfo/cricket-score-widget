@@ -5,6 +5,8 @@ renovate.json
 .gitignore
 .git*
 .github*
+src
+public
 
 # Optional npm cache directory
 .npm
