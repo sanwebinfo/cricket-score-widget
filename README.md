@@ -62,14 +62,14 @@ yarn
 yarn dev
 ```
 
-- Prouction Build
+- Production Build
 
 ```sh
 yarn build
 ```
 
 - Modify the Script - `/src/App.svelte`
-- Build CSS and Javascript are Stored in `/public/` Foler
+- Build CSS and Javascript are Stored in `/public/` Folder
 
 ## LICENSE
 
