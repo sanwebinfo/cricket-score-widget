@@ -1,0 +1,16 @@
+scripts
+renovate.json
+.vercelignore
+.npmignore
+.gitignore
+.git*
+.github*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Editors
+.vscode/*
