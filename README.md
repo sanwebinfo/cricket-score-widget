@@ -4,6 +4,8 @@
 
 Live Cricket Score Javascript Widget Build using Svelte JS.  
 
+DEMO - <https://mskian.github.io/cricket-score-widget/public/>  
+
 ## Features
 
 - Just add the Javascript and CSS Bundle Files in your Website/blog - Done
