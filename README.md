@@ -12,6 +12,25 @@ Live Cricket Score Javascript Widget Build using Svelte JS.
 - Fetch API
 - Dark Mode Support  
 
+## Usage
+
+- Add this Script and Stylesheet on above `</head>`
+
+```html
+<link rel='stylesheet' href='https://unpkg.com/cricket-score-widget@0.0.2/dist/build/bundle.css'>
+<script src="https://unpkg.com/cricket-score-widget@0.0.2/dist/build/bundle.js"></script>
+```
+
+- Add this HTML Div element to Display Live Cricket Score
+
+```html
+<div class="main">
+<div class="table-score">
+<div class="hello_cricket"></div>
+</div>
+</div>
+```
+
 ## Development
 
 - Clone or Download the Repo
