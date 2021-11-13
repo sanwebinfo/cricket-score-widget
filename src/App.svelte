@@ -128,15 +128,28 @@
     local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"),
     local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
 }
-:global(.main) {
+:global(.main-score) {
   padding: 1em;
   max-width: 80%;
   margin: 0 auto;
   font-family: system-ui;
 }
 @media (min-width: 640px) {
-:global(.main) {
+:global(.main-score) {
     max-width: 50%;
+  }
+}
+:global(.main-score, p) {
+	text-align: center;
+	font-size: 16px;
+	font-family: system-ui;
+}
+@media (prefers-color-scheme: dark) {
+  :global(.main-score, p) {
+    color: #fff;
+    text-align: center;
+	  font-size: 16px;
+	font-family: system-ui;
   }
 }
 :global(.table-score tr) {
@@ -212,6 +225,18 @@
   margin: 0.5em 0 2.5em;
   width: 100%;
   table-layout: fixed;
+}
+@media (prefers-color-scheme: dark) {
+:global(.table-score table) {
+  border-collapse: collapse;
+  border-spacing: 50;
+  border: 1px solid #a5fd99;
+  overflow-wrap: break-word;
+  border-collapse: collapse;
+  margin: 0.5em 0 2.5em;
+  width: 100%;
+  table-layout: fixed;
+ }
 }
 :global(.table-score th, td) {
   text-align: left;

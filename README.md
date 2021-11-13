@@ -32,7 +32,7 @@ DEMO - <https://mskian.github.io/cricket-score-widget/public/>
 - Add this HTML Div element to Display Live Cricket Score
 
 ```html
-<div class="main">
+<div class="main-score">
 <div class="table-score">
 <div class="hello_cricket"></div>
 </div>
