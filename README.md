@@ -20,13 +20,13 @@ DEMO - <https://mskian.github.io/cricket-score-widget/public/>
 
 ```html
 <link rel="preconnect" href="//cdn.jsdelivr.net">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cricket-score-widget@0.0.3/public/build/bundle.css" integrity="sha256-XGJFGWiCflTi12RTiNJsWtaktxn7ofkU5mbd7/WkgF0=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cricket-score-widget@0.0.4/public/build/bundle.css" integrity="sha256-k31RXSyfVM1sRFBerc/RmoJSrw+Mm5jQ5wjlv1etsf4=" crossorigin="anonymous">
 ```
 
 - Add this Javascript on above closed body tag `</body>`
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/cricket-score-widget@0.0.3/public/build/bundle.js" integrity="sha256-M/47VY2JuRbIv2/rOvjQTsk9mkUO8PzV5U6w6J9Op54=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/cricket-score-widget@0.0.4/public/build/bundle.js" integrity="sha256-M/47VY2JuRbIv2/rOvjQTsk9mkUO8PzV5U6w6J9Op54=" crossorigin="anonymous"></script>
 ```
 
 - Add this HTML Div element to Display Live Cricket Score
