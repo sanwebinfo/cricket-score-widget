@@ -19,6 +19,7 @@ DEMO - <https://mskian.github.io/cricket-score-widget/public/>
 - Add this Stylesheet on above `</head>`
 
 ```html
+<link rel="preconnect" href="//cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cricket-score-widget@0.0.3/public/build/bundle.css" integrity="sha256-XGJFGWiCflTi12RTiNJsWtaktxn7ofkU5mbd7/WkgF0=" crossorigin="anonymous">
 ```
 
