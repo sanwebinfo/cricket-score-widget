@@ -4,7 +4,6 @@
          try {
              const response = await fetch('https://criapi.vercel.app/live');
              const data = await response.json();
-             //console.log(data);
              if (data === false || data.current === 'Data Not Found') {
                if (helloCricketClass != null) {
                  let score_msg = '<br><b><p><code>Currently No Live Match</code></p><b><br>';
