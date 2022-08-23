@@ -1,0 +1,5 @@
+# Netlify redirects file, edit with your domain
+# https://www.netlify.com/docs/redirects/
+
+https://crilive.netlify.com/* https://score.sanweb.info/:splat 301!
+http://crilive.netlify.com/* https://score.sanweb.info/:splat 301!
