@@ -1,10 +1,12 @@
 <script>
      async function fetchscore() {
-       const helloCricketClass = document.getElementsByClassName('hello_cricket');
+        const helloCricketClass = document.getElementsByClassName('hello_cricket');
+        let url = new URL(window.location);
+        let searchParams = new URLSearchParams(url.search);
+        const getInput = searchParams.get('match') || null
          try {
-             const response = await fetch('https://criapi.vercel.app/live');
+             const response = await fetch(`https://criscore.deno.dev/match/${getInput}`);
              const data = await response.json();
-             //console.log(data);
              if (data === false || data.current === 'Data Not Found') {
                if (helloCricketClass != null) {
                  let score_msg = '<br><b><p><code>Currently No Live Match</code></p><b><br>';
@@ -256,5 +258,45 @@
     color: #fff;
     background-color: #333;
   }
+}
+:global(.score-btn) {
+  padding: 1em 2.1em 1.1em;
+  border-radius: 3px;
+  border: none;
+  margin: 8px 8px 8px 8px;
+  color: #fbdedb;
+  background-color: #fbdedb;
+  display: inline-block;
+  background: #e74c3c;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: .85em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  cursor:pointer;
+}
+:global(.score-btn), :global(.score-btn:focus) {
+  opacity: 0.8;
+}
+:global(.score-btn:active) {
+  -webkit-transform: scale(0.80);
+  -moz-transform: scale(0.80);
+  -ms-transform: scale(0.80);
+  -o-transform: scale(0.80);
+  transform: scale(0.80);
+}
+:global(.score-btn.block) {
+  display: block !important;
+}
+:global(.score-btn.circular) {
+border-radius: 50em !important;
 }
 </style>
