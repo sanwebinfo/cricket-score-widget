@@ -23,13 +23,13 @@ CDN - <https://www.jsdelivr.com/package/npm/cricket-score-widget>
 
 ```html
 <link rel="preconnect" href="//cdn.jsdelivr.net">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mskian/cricket-score-widget@main/public/build/bundle.css" integrity="sha512-Fekdf63Eah6fVX7CxwqrtwWcO0WM2jrxZJviGP2nnXBpfj2E6K69Ci96WW1AcLSfcgIqwgQt1G9RSkfDjD5qug==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cricket-score-widget@0.0.7/public/build/bundle.css" integrity="sha256-yvi81Q3KOkEooohCFxO74GKJQndjbKaJM9Rk9zoi2/c=" crossorigin="anonymous">
 ```
 
 - Add this Javascript on above closed body tag `</body>`
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/mskian/cricket-score-widget@main/public/build/bundle.js" integrity="sha512-eVS7IPqUYFVeknj5kfYscBVKrMpRjfw+EhSmY2xwgVibpS5dc124lxMRhe/k0ZC3p92odF5Zoty+KP8yWQEEBA==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/cricket-score-widget@0.0.7/public/build/bundle.js" integrity="sha256-AC/+J7742bk4MIA7BvW0U8Bvcf3BLSZwjrmUAlfVBsE=" crossorigin="anonymous"></script>
 ```
 
 - Add this HTML Div element to Display Live Cricket Score
