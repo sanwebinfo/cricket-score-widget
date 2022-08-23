@@ -32,6 +32,8 @@ CDN - <https://www.jsdelivr.com/package/npm/cricket-score-widget>
 <script src="https://cdn.jsdelivr.net/npm/cricket-score-widget@0.0.7/public/build/bundle.js" integrity="sha256-AC/+J7742bk4MIA7BvW0U8Bvcf3BLSZwjrmUAlfVBsE=" crossorigin="anonymous"></script>
 ```
 
+**Note**: Get Updated CDN URL From `jsdelivr.com`
+
 - Add this HTML Div element to Display Live Cricket Score
 
 ```html

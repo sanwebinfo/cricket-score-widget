@@ -2,6 +2,7 @@
   "name": "cricket-score-widget",
   "description": "Live Cricket Score Javascript Widget Build using Svelte JS.",
   "version": "0.0.7",
+  "main": "./public/build/bundle.js",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
