@@ -1,19 +1,36 @@
 <script>
-     async function fetchscore() {
-        const helloCricketClass = document.getElementsByClassName('hello_cricket');
-        let url = new URL(window.location);
-        let searchParams = new URLSearchParams(url.search);
-        const getInput = searchParams.get('match') || null
-         try {
-             const response = await fetch(`https://criscore.deno.dev/match/${getInput}`);
-             const data = await response.json();
-             if (data === false || data.current === 'Data Not Found') {
-               if (helloCricketClass != null) {
-                 let score_msg = '<br><b><p><code>Currently No Live Match</code></p><b><br>';
-                  score_text(helloCricketClass, score_msg);
-              }
-             } else if (helloCricketClass != null) {
-                 let score_msg = `
+async function fetchscore() {
+  const helloCricketClass = document.getElementsByClassName("hello_cricket");
+  const link = document.querySelector('link[rel="canonical"]')
+    ? document.querySelector('link[rel="canonical"]')
+    : document.createElement("link");
+  const pathname = typeof window !== "undefined" ? window.location.href : "";
+  link.setAttribute("rel", "canonical");
+  link.setAttribute("href", pathname);
+  document.head.appendChild(link);
+
+  let url = new URL(window.location);
+  let searchParams = new URLSearchParams(url.search);
+  const getInput = searchParams.get("match") || null;
+  try {
+    const response = await fetch(`https://criscore.deno.dev/match/${getInput}`);
+    const data = await response.json();
+    if (data === false || data.current === "Data Not Found") {
+      if (helloCricketClass != null) {
+        let score_msg =
+          "<br><b><hr><p><code>🔴 Currently No Live Match 🔴</code></p><hr><b><br>";
+        score_text(helloCricketClass, score_msg);
+      }
+    } else if (helloCricketClass != null) {
+      document
+        .getElementsByTagName("meta")
+        .namedItem("description")
+        .setAttribute(
+          "content",
+          `Live - ${data.title} - Get Real-time Live Cricket Score Update without refreshing the page.`
+        );
+      document.title = `${data.title} Live Cricket Score 🏏`;
+      let score_msg = `
 				         <table>
                  <tbody>
                  <tr>
@@ -42,25 +59,26 @@
                  </tr>
                  </tbody>
                  </table>`;
-				 score_text(helloCricketClass, score_msg);
-             }
-         } catch (exception) {
-             if (helloCricketClass != null) {
-                 let score_msg = '<p>🔴 Connection Lost or Enter a valid Match URL</p>';
-                 score_text(helloCricketClass, score_msg);
-             }
-         }
-     }
-     function score_text(helloCricketClass, text) {
-       for (let i = 0; i < helloCricketClass.length; i++) {
-         helloCricketClass[i].innerHTML = '<br><b><p><code>Fetching the Live Score 🔵</code></p><br><br>';
-         setTimeout(() => {
-             helloCricketClass[i].innerHTML = text;
-         }, 1000);
-       }
-     }
-     fetchscore();
-     setInterval(fetchscore, 60 * 2000);
+      score_text(helloCricketClass, score_msg);
+    }
+  } catch (exception) {
+    if (helloCricketClass != null) {
+      let score_msg = "<p>🔴 Connection Lost or Enter a valid Match URL</p>";
+      score_text(helloCricketClass, score_msg);
+    }
+  }
+}
+function score_text(helloCricketClass, text) {
+  for (let i = 0; i < helloCricketClass.length; i++) {
+    helloCricketClass[i].innerHTML =
+      "<br><b><hr><p><code>🔵 Fetching the Live Score 🔵</code></p><hr><br><br>";
+    setTimeout(() => {
+      helloCricketClass[i].innerHTML = text;
+    }, 1000);
+  }
+}
+fetchscore();
+setInterval(fetchscore, 60 * 2000);
 </script>
 
 <style>
