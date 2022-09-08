@@ -20,10 +20,8 @@ jobs:
           cache: 'yarn'
       - run: yarn install
       - run: yarn build
-      - name: Deploy
-        uses: netlify/actions/cli@master
-        with:
-          args: deploy --prod --dir=public
+      - name: Deploy to Netlify
+        run: npx netlify deploy --prod --dir=public
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
