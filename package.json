@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/mskian/cricket-score-widget#readme",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-commonjs": "^23.0.3",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "rollup": "^3.4.0",
     "rollup-plugin-css-only": "^4.3.0",
