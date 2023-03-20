@@ -23,16 +23,16 @@ CDN - <https://www.jsdelivr.com/package/npm/cricket-score-widget>
 
 ```html
 <link rel="preconnect" href="//cdn.jsdelivr.net">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cricket-score-widget@0.0.9/public/build/bundle.css" integrity="sha256-yvi81Q3KOkEooohCFxO74GKJQndjbKaJM9Rk9zoi2/c=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cricket-score-widget@<PACKAGE-VERSION>/public/build/bundle.css" integrity="sha256-yvi81Q3KOkEooohCFxO74GKJQndjbKaJM9Rk9zoi2/c=" crossorigin="anonymous">
 ```
 
 - Add this Javascript on above closed body tag `</body>`
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/cricket-score-widget@0.0.9/public/build/bundle.js" integrity="sha256-2DByz5abCmWBxzV1R6+opStZ4rbkVjYCXv1BQL/sUnM=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/cricket-score-widget@<PACKAGE-VERSION>/public/build/bundle.js" integrity="sha256-2DByz5abCmWBxzV1R6+opStZ4rbkVjYCXv1BQL/sUnM=" crossorigin="anonymous"></script>
 ```
 
-**Note**: Get Updated CDN URL From `jsdelivr.com`
+**Note**: Get Updated CDN URL From `https://www.jsdelivr.com/package/npm/cricket-score-widget`
 
 - Add this HTML Div element to Display Live Cricket Score
 
