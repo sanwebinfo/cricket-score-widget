@@ -13,7 +13,7 @@ async function fetchscore() {
   let searchParams = new URLSearchParams(url.search);
   const getInput = searchParams.get("match") || null;
   try {
-    const response = await fetch(`https://criscore.deno.dev/match/${getInput}`);
+    const response = await fetch(`https://cricketapi.deno.dev/match/${getInput}`);
     const data = await response.json();
     if (data === false || data.current === "Data Not Found") {
       if (helloCricketClass != null) {
