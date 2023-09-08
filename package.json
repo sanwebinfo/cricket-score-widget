@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mskian/cricket-score-widget.git"
+    "url": "git+https://github.com/sanwebinfo/cricket-score-widget.git"
   },
   "keywords": [
     "cricket",
@@ -21,9 +21,9 @@
   "author": "Santhosh veer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mskian/cricket-score-widget/issues"
+    "url": "https://github.com/sanwebinfo/cricket-score-widget/issues"
   },
-  "homepage": "https://github.com/mskian/cricket-score-widget#readme",
+  "homepage": "https://github.com/sanwebinfo/cricket-score-widget#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-node-resolve": "^15.2.1",
