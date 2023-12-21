@@ -4,6 +4,8 @@
 
 Live Cricket Score Javascript Widget Build using Svelte JS.  
 
+**API is not working due to the Cricbuzz Mobile site being Fully Redesigned - The full Site Structure was Changed it's a bit complex to get data - Please Consider using the Python Cricket API Version - <https://github.com/sanwebinfo/python-cricket-score/tree/main/api>**
+
 **Note**: i am Closing this Widget for Public Usage due API Server Down issue - You can Self-host my Cricket API on your Server - Fork & Rebuild this widget according to your Needs.  
 
 DEMO - <https://score.sanweb.info/>  
